@@ -23,7 +23,7 @@ receivers:
 - name: 'gmail'
   email_configs:
   - to: email_address
-    from: kayzeel@yahoo.com
+    from: email_address
     smarthost: smtp_server_address
     auth_username: email_address
     auth_identity: email_address
