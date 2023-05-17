@@ -15,5 +15,5 @@ sudo apt install python3-bcrypt -y
 # Generate a hashed password with the python script
 # Create a web config file for prometheus
 # basic_auth_users:
-      admin:
+#      admin:
 # Reference the web config file in prometheus.service et voila!
