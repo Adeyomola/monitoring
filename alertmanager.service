@@ -1,0 +1,17 @@
+[Unit]
+Description=Alert Manager
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=alertmanager
+Group=alertmanager
+Type=simple
+Restart=on-failure
+ExecStart=/usr/local/bin/alertmanager \
+  --config.file=/etc/alertmanager/alertmanager.yml \
+  --storage.path=/etc/alertmanager/data \
+  --data.retention=120h
+
+[Install]
+WantedBy=multi-user.target
